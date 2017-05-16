@@ -1,0 +1,388 @@
+.body{
+	text-decoration: none;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+.row>h1{
+	text-align: center;
+}
+.form input{
+	margin: 0;
+	width: 200px;
+	height: 30px;
+	color: black;
+}
+.form button{
+	margin: 0;
+	height: 30px;
+}
+
+.noBottomMargin{
+	margin: 0px !important;
+}
+/*navbar*/
+.navbar{
+	float: right;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.1) !important;
+	padding-left: 5%;
+	padding-right: 5%;
+    align-items: baseline;
+    color: white;
+}
+.navbar-brand {
+	color: rgba(0, 255, 255, 1) !important;
+	letter-spacing: 0.1em;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.5em !important;
+}
+.navbar a{
+	letter-spacing: 0.1em;
+	color: white !important;
+	font-size: 1em ;
+}
+
+.navbar a:hover{
+	background-color: rgba(0,0,0,1) !important;
+}
+.navbar button{
+    margin-right: 20px;
+}
+
+/*jumbotron*/
+.jumbotron{
+	background:url("../assets/img/backCoverImg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+.jumboBox{
+	text-align: right;
+	padding: 200px;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    height: 600px;
+    max-width: 80%;
+}
+.jumboBox h1{
+	/*font-family: 'Abril Fatface', serif;*/
+}
+.jumboBox h3, .jumboBox h2, .jumboBox h4,{
+	margin-right: 70px;
+}
+
+.socialMediaIcons img{
+
+}
+/*Divider - Read, Watch, Listen*/
+
+.spacerOne{
+	font-family: 'Abril Fatface', serif;
+	font-size: 2em;
+	max-height: 60px;
+	text-align: center;
+	background-color: rgba(75,75,75, 1);
+
+}
+.spacerOne a{
+	color: rgba(0, 255, 255, 1) !important;
+	text-decoration: none !important;
+}
+.spacerOne a:hover{
+	color:white !important;
+}
+
+.spacerOne img{
+	max-height: 100px;
+}
+/*Big Quote*/
+.quote{
+	display: flex;
+	text-align: center;
+	font-family: 'Abril Fatface';
+	height: 100px;
+	align-items: center;
+}
+
+/*Modals for reading poetry text*/
+
+.modal-title{
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+}
+.modal-body p{
+	padding: 0;
+	margin: 0;
+}
+.modal-footer{
+	display: flex;
+}
+/* About section*/
+.about{
+	padding-right: 10%;
+	text-align: left;
+	color: white;
+	background-color: rgba(75,75,75, 1);
+}
+.about img{
+	text-align: center;
+	max-height:300px; 
+	
+}
+/*Interviews section*/
+.interview{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	font-size: 0.9em;
+	min-height: 300px;
+}
+/*Multimedia section*/
+.audio, .video{
+	text-align: center;
+}
+
+/*Tilter Book covers*/
+
+
+.tilter {
+
+	position: relative;
+	display: block;
+	flex: none;
+	width: 150px;
+	height: 208px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	perspective: 1000px;
+}
+
+.tilter * {
+	pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+	color: #fff;
+	outline: none;
+}
+
+.tilter__figure,
+.tilter__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.tilter__figure > * {
+	transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+	position: relative;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 1em;
+}
+
+.tilter__title {
+	font-family: 'Abril Fatface', serif;
+	font-size: 1.8em;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}
+
+.tilter__description {
+	font-size: 0.85em;
+	margin: 1em 0 0 0;
+	letter-spacing: 0.15em;
+}
+
+/*Contact section*/
+.contactImg img{
+	display: flex;
+	border-radius: 50%;
+	margin: 0 auto;
+	height: 200px;
+}
+.contactFormWrapper{
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #ddd;
+	width: 300px;
+	text-align: center;
+}
+
+
+/*Make the cover image explode*/
+.segmenter {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.segmenter__background,
+.segmenter__pieces,
+.segmenter__piece-wrap,
+.segmenter__piece-parallax,
+.segmenter__piece {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform-style: preserve-3d;
+}
+
+.segmenter__piece-parallax {
+	transition: transform 0.2s ease-out;
+}
+
+.segmenter__pieces {
+	perspective: 400px;
+}
+
+.segmenter__background,
+.segmenter__piece,
+.segmenter {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.segmenter__shadow {
+	position: absolute;
+	opacity: 0;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
+}
+.segmenter>h2{
+	font-size: 30;
+}
+
+
+
+
+
+/*poem scroll demo*/
+#poemScroll{
+	/*border: 2px solid black;*/
+	display: flex;
+	align-items: baseline;
+	height: 80px;
+}
+.outer{
+	color: rgba(0,0,0,0.2);
+	font-size: 2em;
+	width: 100%;
+	height: 100%;
+}
+.rightText{
+	text-align: right;
+}
+.leftText{
+	text-align: left;
+}
+.light{
+	color: rgba(0,0,0,0.5);
+}
+.inFocusText{
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5em;
+	height: 100%;
+	height: 100%;
+}
+
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: orange;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
