@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Victoria Kennefick: Poetry</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script>
+			document.documentElement.className = 'js';
+		</script>
+</head>
+<body>
+<div class="segmenter" style="background-image: url(assets/img/vk-large.jpg)">
+</div>
+			<h2 class="trigger-headline trigger-headline--hidden"><span></span></h2>
+			<div class="bottom-nav">
+				<button class="btn btn--trigger">Show Effect</button>
+				
+			</div>
+		
+
+
+<div class="container">
+<!-- <div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+					<section class="content content--c2">
+				<a href="#" class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="assets/img/3.jpg" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Helen Portland</h3>
+							<p class="tilter__description">Seattle</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="assets/img/4.jpg" alt="img04" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Kara Greene</h3>
+							<p class="tilter__description">New York</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</section>
+			</div>
+		</div> -->
+	<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h2>Ballycotton Pier</h2>
+			</div>
+		</div>
+		<div class="row" >
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="scroll-left">
+				<p>Scroll left... </p>
+				</div>
+			</div>
+		</div>
+	<div class="row" id="controls">
+		<div class="col-xs-10 col-xs-offset-1">
+		<button type="button" id="button_play" class="btn" onclick='playTwo()'>Play
+      			<i class="fa fa-play"></i>
+    		</button>
+    		
+    		<button type="button" id="button_stop" class="btn" onclick='stop()'>Stop
+      			<i class="fa fa-stop"></i>
+    		</button>
+    	</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<h2>Ballycotton Pier</h2>
+		</div>
+	</div>
+	<div class="row" id="poemScroll">
+		<div class="col-xs-2 col-xs-offset-1">
+			<div class="outer rightText" id="fifth"><p>,</p></div>
+		</div>
+		<div class="col-xs-2">
+			<div class="outer rightText light" id="fourth"><p>.</p></div>
+		</div>
+		<div class="col-xs-2">
+			<div class="inFocusText" id="third"><p>.</p></div>
+		</div>
+		<div class="col-xs-2">
+			<div class="outer leftText light" id="second"><p>.</p></div>
+		</div>
+		<div class="col-xs-2">
+			<div class="outer leftText" id="first"><p>.</p></div>
+		</div>
+	</div>
+	<div class="row" id="controls">
+		<div class="col-xs-10 col-xs-offset-1">
+		<button type="button" id="button_play" class="btn" onclick='play()'>Play
+      			<i class="fa fa-play"></i>
+    		</button>
+    		
+    		<button type="button" id="button_stop" class="btn" onclick='stop()'>Stop
+      			<i class="fa fa-stop"></i>
+    		</button>
+    	</div>
+	</div>
+
+
+
+
+</div>
+
+
+	<script type="text/javascript" src="lib/jquery/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/poemScript.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+<script>
+	
+		// Cover image explodes
+		(function() {
+			var headline = document.querySelector('.trigger-headline'),
+				trigger = document.querySelector('.btn--trigger'),
+				segmenter = new Segmenter(document.querySelector('.segmenter'), {
+					pieces: 7,
+					animation: {
+						duration: 1500,
+						easing: 'easeOutQuad',
+						delay: 50,
+						translateZ: {min: 10, max: 65}
+					},
+					parallax: true,
+					parallaxMovement: {min: 5, max: 10},
+					positions: [
+						{top: 10, left: 20, width: 20, height: 30},
+						{top: 8, left: 35, width: 30, height: 20},
+						{top: 25, left: 18, width: 14, height: 25},
+						{top: 23, left: 50, width: 20, height: 10},
+						{top: 30, left: 65, width: 10, height: 30},
+						{top: 48, left: 20, width: 10, height: 13},
+						{top: 50, left: 67, width: 10, height: 20}
+					],
+					onReady: function() {
+						trigger.classList.remove('btn--hidden');
+						trigger.addEventListener('click', function() {
+							segmenter.animate();
+							headline.classList.remove('trigger-headline--hidden');
+							this.classList.add('btn--hidden');
+						});
+					}
+				});
+		})();
+		</script>
+</body>
+</html>

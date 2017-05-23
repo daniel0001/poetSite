@@ -1,3 +1,29 @@
+$(document).ready(function() {
+	$( ".fade-one" ).hide(0).fadeIn(1500);
+	$( "#fade-two" ).hide(0).delay(500).fadeIn(1000);
+	$( "#fade-three" ).hide(0).delay(1000).fadeIn(1000);
+	$( "#fade-four" ).hide(0).delay(1500).fadeIn(1000);
+
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $(document).on('click', 'a.page-scroll', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
 
 // nav-bar change colour on scroll
 var a = $(".nav").offset().top;
@@ -10,6 +36,8 @@ $(document).scroll(function(){
        $('.nav').css({"background":"transparent"});
     }
 });
+
+
 
 // book cover tilter effect
 	(function() {
@@ -59,3 +87,5 @@ $(document).scroll(function(){
 			});
 
 		})();
+
+});

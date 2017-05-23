@@ -1,627 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-	<title>Victoria Kennefick Poetry</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 
-	<nav class="navbar navbar-default navbar-fixed-top ">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<title>Victoria Kennefick Poetry</title>
+		<script>
+		document.documentElement.className = 'js';
+		</script>
+	</head>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top fade-one">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">Victoria Kennefick </a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
 				</button>
 			</div>
-				<ul id="myCollapsingList" class="nav nav-justified collapse navbar-collapse">
-					<li class="active"><a href="#">Home</a></li>
-					<li ><a href="#">About</a></li>
-					<li ><a href="#">Poetry</a></li>
-					<li ><a href="#">Media</a></li>
-					<li ><a href="#">Contact</a></li>
-				</ul>
+			<ul id="myCollapsingList" class="nav nav-justified collapse navbar-collapse">
+				<li class="active btn--trigger"><a href="#" >Home</a></li>
+				<li ><a class="page-scroll" id="#about">About</a></li>
+				<li ><a href="#poetry" ng-click="True">Poetry</a></li>
+				<li ><a href="#multimedia">Multimedia</a></li>
+				<li ><a href="#interviews">Interviews</a></li>
+				<li ><a href="#contact">Contact</a></li>
+			</ul>
 		</nav>
-	
-	  	<!-- <div class="coverImg">	 -->
-		<div class="jumbotron noBottomMargin">
-			<div class="container jumboBox">
-				<h2>Victoria</h2>
-			  	<h2>Kennefick</h2> 
-			  	<h3>Poetry</h3>
-				 <a href="https://twitter.com/VKennefick" target="blank"><img src="assets/img/twitter.png" width="50px" height="50px"></a>
-				 <a href="https://www.facebook.com/" target="blank"><img src="assets/img/facebook.png" width="45px" height="45px"></a>
-
-				 <div class="award">
-			 	<h4>"Saboteur Award </h4><h4>for Best Poetry Pamphlet </h4><h4>for White Whale (Southword Editions, 2015)."</h4>
-			 	</div>
-			 	<form class="form">
-			 	<h5><b>Please subscribe to receive poetry and updates</b></h5>
-		 	      <input type="email" id="email" placeholder="Enter your email address">
-		 	      <button class="btn btn-default" type="submit">Subscribe</button>
-		 	      </span>
-		 	    </form><!-- /input-group -->
-			 </div>
-		</div>
-	  	<!-- </div> -->
-	
-<div class="container-fluid">
-	<div class="noBottomMargin">
-		<div class="row spacerOne">
-			<div class="col-xs-3"><a href="#">Read</a></div>
-			<div class="col-xs-1"><img src="assets/img/stripe.jpg"></div>
-			<div class="col-xs-3"><a href="#">Listen</a></div>
-			<div class="col-xs-1"><img src="assets/img/stripe.jpg"></div>
-			<div class="col-xs-3"><a href="#">Watch</a></div>
-		</div>
-	</div>
-	<div class="row quote">
-			<div class="col-xs-10 col-xs-offset-1">
-				<div class="bigQuote">
-				<h1>"Winner of the best pamphlet bla bla"</h1>
+		
+		<!-- <div class="coverImg">	 -->
+		<div class="jumbotron noBottomMargin segmenter">
+			<div class="container">
+				<div class="jumboBox">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="coverPortrait fade-one">
+								<img src="assets/img/vkBlack2.jpg">
+							</div>
+						</div>
+						<div class="col-xs-8">
+							<h1 id="fade-two">Victoria Kennefick</h1>
+							<h1 id ="fade-three">Poetry</h1>
+							<div id="fade-four">
+								<a href="https://twitter.com/VKennefick" target="blank"><img src="assets/img/twitter.png" width="50px" height="50px"></a>
+								<a href="https://www.facebook.com/" target="blank"><img src="assets/img/facebook.png" width="45px" height="45px"></a>
+								<div class="award">
+									<h4>"Saboteur Award for Best Poetry Pamphlet </h4><h4>for White Whale (Southword Editions, 2015)."</h4>
+								</div>
+								<form class="form">
+									<h5><b>Please subscribe to receive poetry and updates</b></h5>
+									<input type="email" id="email" placeholder="Enter your email address">
+									<button class="btn btn-default" type="submit">Subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row about">
-		<div class="col-xs-10 col-xs-offset-2 col-md-5 col-md-offset-1">
-				<img src="assets/img/headshot-vk1.jpg" >
-		</div>
-		<div class="col-xs-10 col-xs-offset-2 col-md-5 col-md-offset-1">
-			<div class="about">
-			<h1>About</h1>
-
-			<p>Victoria Kennefick is a poet, teacher and actor. A native of Shanagarry, Co. Cork, she was a recipient of the Fulbright Scholarship in 2007 and completed her PhD in Literature in University College Cork in 2009. She has lectured on the BA and MA programmes in the School of English, UCC, Georgia College and State University and Dublin City University. Most recently, her poetry has appeared in The Stinging Fly (Winter 2012) and she has read her work as part of The Seamus Heaney Summer School 2012, Queen's University, Belfast. Victoria is a member of The Listowel Writers' Week Committee 2013.</p>
-			</div>
-		</div>
-	</div>
-
-
-		<div class="row quote">
-			<div class="col-xs-10 col-xs-offset-1">
-				<div class="bigQuote">
-				<h2>"We stared at each other, rare exhibits in the Louvre"</h2>
+		<!-- </div> -->
+		
+		<div class="container-fluid">
+			<div class="noBottomMargin">
+				<div class="row spacerOne">
+					<div class="col-xs-3"><a href="#">Watch</a></div>
+					<div class="col-xs-1"><img src="assets/img/stripe.jpg"></div>
+					<div class="col-xs-3"><a href="#">Read</a></div>
+					<div class="col-xs-1"><img src="assets/img/stripe.jpg"></div>
+					<div class="col-xs-3"><a href="#">Listen</a></div>
 				</div>
 			</div>
-
-		</div>
-		<hr>
-
-<main>
-	<section class="container">
-		<div class="row">
-		<!-- Book Cover Tilter - Paris Syndrome -->
-			<div class="col-sm-4 col-xs-12">
-				<a data-toggle="modal" data-target="#parisSyndrome" class="tilter tilter--5">
-					<figure class="tilter__figure">
-						<img class="tilter__image" src="assets/img/parisBookCover.jpg" alt="img05" />
-						<div class="tilter__deco tilter__deco--shine"><div></div></div>
-						<div class="tilter__deco tilter__deco--overlay"></div>
-						<figcaption class="tilter__caption">
-							<h3 class="tilter__title">Paris Syndrome</h3>
+			<div class="row quote" id="about">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="bigQuote">
+						<h1>"A cat purrs against the glass outside, the window full of it,"</h1>
+					</div>
+				</div>
+			</div>
+			
+			<section>
+				<div class="row about about-section">
+					<div class="aboutImgWrapper col-xs-12 col-xs-offset-1 col-md-4">
+						<img src="assets/img/headshot-vk1.jpg" alt="Victoria Kenenfick">
+					</div>
+					<div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
+						<div class="aboutText">
+							<h1>About</h1>
+							<p>Victoria Kennefick is a poet, teacher and actor. A native of Shanagarry, Co. Cork, she was a recipient of the Fulbright Scholarship in 2007 and completed her PhD in Literature in University College Cork in 2009. She has lectured on the BA and MA programmes in the School of English, UCC, Georgia College and State University and Dublin City University. Most recently, her poetry has appeared in The Stinging Fly (Winter 2012) and she has read her work as part of The Seamus Heaney Summer School 2012, Queen's University, Belfast. Victoria is a member of The Listowel Writers' Week Committee 2013.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="row quote">
+				<a name="poetry"></a>
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="bigQuote">
+						<h1>"We stared at each other, rare exhibits in the Louvre"</h1>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<main >
+			
+			<section >
+				<div class="container">
+					<div class="row">
+						<h1>Poetry</h1>
+						<!-- Book Cover Tilter - Paris Syndrome -->
+							<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+								<a data-toggle="modal" data-target="#parisSyndrome" class="tilter tilter--5">
+									<figure class="tilter__figure">
+										<img class="tilter__image" src="assets/img/parisBookCover.jpg" alt="img05" />
+										<div class="tilter__deco tilter__deco--shine"><div></div></div>
+										<div class="tilter__deco tilter__deco--overlay"></div>
+										<figcaption class="tilter__caption">
+										<h3 class="tilter__title">Paris Syndrome</h3>
+										<p class="tilter__description">Victoria Kennefick</p>
+										</figcaption>
+										<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+											<path d="M20.5,20.5h260v375h-260V20.5z" />
+										</svg>
+									</figure>
+								</a>
+							</div>
+							<!-- Modal : Paris Syndrome Poem-->
+							<div class="modal fade" id="parisSyndrome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="myModalLabel">Paris Syndrome</h4>
+											<h5>BY VICTORIA KENNEFICK</h5>
+											<img src="assets/img/paris.jpg">
+										</div>
+										<div class="modal-body">
+											<p>The Eiffel Tower erected itself in my head,</p>
+											<p>we couldn’t find the lifts, climbed the stairs.</p>
+											<br>
+											<p>Of course there were fireworks.</p>
+											<br>
+											<p>We stared at each other, rare exhibits in the Louvre —</p>
+											<p>you licked my Mona Lisa smile right off.</p>
+											<br>
+											<p>Of course we were both in imaginary Chanel.</p>
+											<br>
+											<p>We drank warm cider and ate pancakes, yours flambéed.</p>
+											<p>I got drunk, my tights laddered on both legs.</p>
+											<br>
+											<p>Of course we experienced tachycardia at the Moulin Rouge.</p>
+											<br>
+											<p>Our hotel, a boxed macaron on a navy boulevard —</p>
+											<p>we spun around in the dark outside, rain-dizzy.</p>
+											<br>
+											<p>Of course we slept at the Ritz.</p>
+											<br>
+											<p>Our little room tucked into the corner, a pink
+											pocket you slipped into that night.</p>
+											<br>
+											<p>Of course our fingers hunted for change.</p>
+											<br>
+											<p>In the mirrored elevator I couldn’t meet your eye,</p>
+											<br>
+											<p>crushed you into the laminated sample menu and died.</p>
+											<br>
+											<p>Of course it was only la petite mort.</p>
+											<br>
+											<p>Source: Poetry (September 2015)</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<!-- Book Cover Tilter - White Whale -->
+							<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+								<a data-toggle="modal" data-target="#whiteWhale" class="tilter tilter--1">
+									<figure class="tilter__figure">
+										<img class="tilter__image" src="assets/img/kennefick_whale1.jpg" alt="img09" />
+										<div class="tilter__deco tilter__deco--shine"><div>
+											
+										</div>
+									</div>
+									<figcaption class="tilter__caption">
+									<p class="tilter__description">Victoria Kennefick</p>
+									</figcaption>
+									<path d="M20.5,20.5h260v375h-260V20.5z" />
+								</svg>
+							</figure>
+						</a>
+					</div>
+					
+				<!-- Modal White Whale  -->
+				<div class="modal fade" id="whiteWhale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Beached Whale</h4>
+								<h5>BY VICTORIA KENNEFICK</h5>
+								<img src="assets/img/kennefick_whale1.jpg">
+							</div>
+							<div class="modal-body">
+								<p>At first I thought that enormous lump of red-brown on the sand</p>
+								<p>was the trunk of some ancient, washed-up tree.</p>
+								<br>
+								<p>It was only when I mounted the object,</p>
+								<p>digging my little hands into something far too pliable,</p>
+								<p>that it really hit me, the stale smell of a thousand low tides</p>
+								<br>
+								<p>and the mute open mouths of the many onlookers</p>
+								<p>with their hysterical dogs, the seagulls circling like squalling clouds,</p></p>
+								<p>my mother’s curlew scream as she ran towards me, disjointed.</p>
+								<br>
+								<p>Astride the whale like this,</p>
+								<p>looking at my mother move through dimensions,</p>
+								<p>planes of distance,</p>
+								<br>
+								<p>I thought of boutique dressing rooms filled to the brim</p>
+								<p>with tension and clothes, like gas, expanding. And of two little girls</p>
+								<p>watching their mother cry at her reflection distorted in a fluorescent mirror.</p>
+								<br>
+								<p>The weight of her past made flesh on her hips,</p>
+								<p>the scars of our arrivals barely healed after all this time,</p>
+								<p>my blind hands all over the body.</p>
+								<br>
+								<p>Grasping, desperate to hold onto something real,</p>
+								<p>not knowing what that was.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Book Cover Tilter - Iron Dragon -->
+				<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+					<a data-toggle="modal" data-target="#ironDragon" class="tilter tilter--5">
+						<figure class="tilter__figure">
+							<img class="tilter__image" src="assets/img/ironBookCover.jpg" alt="img09" />
+							<div class="tilter__deco tilter__deco--shine"><div></div></div>
+							<div class="tilter__deco tilter__deco--overlay"></div>
+							<figcaption class="tilter__caption">
+							<h3 class="tilter__title">Iron Dragon</h3>
 							<p class="tilter__description">Victoria Kennefick</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+					</a>
+				</div>
+				<!-- Modal = Iron Dragon Poem -->
+				<div class="modal fade" id="ironDragon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Iron Dragon</h4>
+								<h5>BY VICTORIA KENNEFICK</h5>
+								<img src="assets/img/iron.jpg">
+							</div>
+							<div class="modal-body"><p>
+							Mother at the ironing board, washing foams at her feet,</p>
+							<p>shirts to be steamed into submission.</p>
+							<p>She pulls one out, stretches its striped skin across the board,</p>
+							<p>licks her lips, tuts at talk-show drone.</p>
+							<br>
+							<p>A cat purrs against the glass outside, the window full of it,</p>
+							<p>beyond dark green leaves mantle my mother.</p>
+							<p>She shimmies the iron into hard to reach places.</p>
+							<p>In small gaps I think I see where sea turns into air.</p>
+							<br>
+							<p>The iron’s fat plastic body conceals its metal tongue,</p>
+							<p>pointed with holes, like buds for tasting.</p>
+							<p>It licks all the wrinkles out,</p>
+							<p>wraps its long, thin tail around us.</p>
+							<p>At his every-day ring she runs, the beast hot on his shirt.</p>
+							<p>I reach up; disturbed, the creature’s breath scalds.</p>
+							<p>At my scream she drops the phone,</p>
+							<p>her slap on my thigh, we both cry.</p>
+							<p>I touch the burn later; it’s flat, scaly,</p>
+							<p>like dragon skin.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<!-- Book Cover Tilter - White Whale -->
+			<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+				<a data-toggle="modal" data-target="#cornerHouse" class="tilter tilter--1">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="assets/img/cornerHouse.jpg" alt="img09" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<figcaption class="tilter__caption">
+						<h3 class="tilter__title">The Corner House</h3>
+						<p class="tilter__description">Victoria Kennefick</p>
 						</figcaption>
 						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
 							<path d="M20.5,20.5h260v375h-260V20.5z" />
 						</svg>
 					</figure>
 				</a>
-		</div>
-			<!-- Modal : Paris Syndrome Poem-->
-		<div class="modal fade" id="parisSyndrome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Paris Syndrome</h4>
-		        <h5>BY VICTORIA KENNEFICK</h5>
-		        <img src="assets/img/paris.jpg">
-		      </div>
-		      <div class="modal-body">
-		      <p>The Eiffel Tower erected itself in my head,</p>
-		      <p>we couldn’t find the lifts, climbed the stairs.</p>
-		      <br>
-		      <p>Of course there were fireworks.</p>
-		      <br>
-		      <p>We stared at each other, rare exhibits in the Louvre —</p>
-		      <p>you licked my Mona Lisa smile right off.</p>
-		      <br>
-		      <p>Of course we were both in imaginary Chanel.</p>
-		      <br>
-		      <p>We drank warm cider and ate pancakes, yours flambéed.</p>
-		      <p>I got drunk, my tights laddered on both legs.</p>
-		      <br>
-		      <p>Of course we experienced tachycardia at the Moulin Rouge.</p>
-		      <br>
-		      <p>Our hotel, a boxed macaron on a navy boulevard —</p>
-		      <p>we spun around in the dark outside, rain-dizzy.</p>
-		      <br>
-		      <p>Of course we slept at the Ritz.</p>
-		      <br>
-		      <p>Our little room tucked into the corner, a pink
-pocket you slipped into that night.</p>
-			<br>
-			<p>Of course our fingers hunted for change.</p>
-			<br>
-			<p>In the mirrored elevator I couldn’t meet your eye,</p>
-			<br>
-			<p>crushed you into the laminated sample menu and died.</p>
-			<br>
-			<p>Of course it was only la petite mort.</p>
-			<br>
-			<p>Source: Poetry (September 2015)</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	<!-- Book Cover Tilter - White Whale -->
-	<div class="col-sm-4 col-xs-12">
-		<a data-toggle="modal" data-target="#whiteWhale" class="tilter tilter--1">
-			<figure class="tilter__figure">
-					<img class="tilter__image" src="assets/img/kennefick_whale1.jpg" alt="img09" />
-				<div class="tilter__deco tilter__deco--shine"><div>
-					
-				</div>
-				</div>
-				<figcaption class="tilter__caption">
-					<p class="tilter__description">Victoria Kennefick</p>
-				</figcaption>
-				<path d="M20.5,20.5h260v375h-260V20.5z" />
-				</svg>
-			</figure>
-		</a>
-	</div>
-			<!-- Modal White Whale  -->
-			<div class="modal fade" id="whiteWhale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Beached Whale</h4>
-		        <h5>BY VICTORIA KENNEFICK</h5>
-		        <img src="assets/img/kennefick_whale1.jpg">
-		      </div>
-		      <div class="modal-body">
-		      <p>At first I thought that enormous lump of red-brown on the sand</p>
-				<p>was the trunk of some ancient, washed-up tree.</p>
-				<br>
-				 <p>It was only when I mounted the object,</p>
-				<p>digging my little hands into something far too pliable,</p>
-				<p>that it really hit me, the stale smell of a thousand low tides</p>
-				 <br>
-				<p>and the mute open mouths of the many onlookers</p>
-				<p>with their hysterical dogs, the seagulls circling like squalling clouds,</p></p>
-				<p>my mother’s curlew scream as she ran towards me, disjointed.</p>
-				 <br>
-				<p>Astride the whale like this,</p>
-				<p>looking at my mother move through dimensions,</p>
-				<p>planes of distance,</p>
-				 <br>
-				<p>I thought of boutique dressing rooms filled to the brim</p>
-				<p>with tension and clothes, like gas, expanding. And of two little girls</p>
-				<p>watching their mother cry at her reflection distorted in a fluorescent mirror.</p>
-				 <br>
-				<p>The weight of her past made flesh on her hips,</p>
-				<p>the scars of our arrivals barely healed after all this time,</p>
-				<p>my blind hands all over the body.</p>
-				 <br>
-				<p>Grasping, desperate to hold onto something real,</p>
-				<p>not knowing what that was.</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-	<!-- Book Cover Tilter - Iron Dragon -->	
-		<div class="col-sm-4 col-xs-12">
-			<a data-toggle="modal" data-target="#ironDragon" class="tilter tilter--5">
-				<figure class="tilter__figure">
-					<img class="tilter__image" src="assets/img/ironBookCover.jpg" alt="img09" />
-					<div class="tilter__deco tilter__deco--shine"><div></div></div>
-					<div class="tilter__deco tilter__deco--overlay"></div>
-					<figcaption class="tilter__caption">
-						<h3 class="tilter__title">Iron Dragon</h3>
-						<p class="tilter__description">Victoria Kennefick</p>
-					</figcaption>
-					<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-						<path d="M20.5,20.5h260v375h-260V20.5z" />
-					</svg>
-				</figure>
-			</a>
-		</div>
-
-		<!-- Modal = Iron Dragon Poem -->
-		<div class="modal fade" id="ironDragon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Iron Dragon</h4>
-		        <h5>BY VICTORIA KENNEFICK</h5>
-		        <img src="assets/img/iron.jpg">
-		      </div>
-		      <div class="modal-body"><p>
-		      Mother at the ironing board, washing foams at her feet,</p>
-		      <p>shirts to be steamed into submission.</p>
-		      <p>She pulls one out, stretches its striped skin across the board,</p>
-		      <p>licks her lips, tuts at talk-show drone.</p>
-		      <br>
-		      <p>A cat purrs against the glass outside, the window full of it,</p>
-		      <p>beyond dark green leaves mantle my mother.</p>
-		      <p>She shimmies the iron into hard to reach places.</p>
-		      <p>In small gaps I think I see where sea turns into air.</p>
-		      <br>
-		      <p>The iron’s fat plastic body conceals its metal tongue,</p>
-		      <p>pointed with holes, like buds for tasting.</p>
-		      <p>It licks all the wrinkles out,</p>
-		      <p>wraps its long, thin tail around us.</p>
-		      <p>At his every-day ring she runs, the beast hot on his shirt.</p>
-		      <p>I reach up; disturbed, the creature’s breath scalds.</p>
-		      <p>At my scream she drops the phone,</p>
-		      <p>her slap on my thigh, we both cry.</p>
-		      <p>I touch the burn later; it’s flat, scaly,</p>
-		      <p>like dragon skin.</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
-
-
-<div class="row">
-<!-- Book Cover Tilter - White Whale -->
-	<div class="col-sm-4 col-xs-12">
-		<a data-toggle="modal" data-target="#cornerHouse" class="tilter tilter--1">
-						<figure class="tilter__figure">
-							<img class="tilter__image" src="assets/img/cornerHouse.jpg" alt="img09" />
-							<div class="tilter__deco tilter__deco--shine"><div></div></div>
-							<figcaption class="tilter__caption">
-							<h3 class="tilter__title">The Corner House</h3>
-							<p class="tilter__description">Victoria Kennefick</p>
-						</figcaption>
-							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-								<path d="M20.5,20.5h260v375h-260V20.5z" />
-							</svg>
-						</figure>
-					</a>
-				</div>
-				<div class="modal fade" id="cornerHouse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">The Corner House</h4>
-			        <h5>BY VICTORIA KENNEFICK</h5>
-			        <img src="assets/img/cornerHouseModal.jpg">
-					</div>
-					<div class="modal-body">
-					<p>Lemonade bottles tinkle in crates,</p>
-					<p>tiny glass babies kept in drawers;</p>
-					<p>skulled once by your small gullet</p>
-					<p>after a day on your uncle’s farm –</p>
-					<p>a packet of fig-rolls for lunch.</p>
-					 <br>
-					<p>Now, push the cap off the bar.</p>
-					<p>Should anyone open the door,</p>
-					<p>light would land with a shock</p>
-					<p>on bouncy floors, splitting ceilings,</p>
-					<p>flight of the stairs towards sky.</p>
-					 <br>
-					<p>Go back, first to the special orders</p>
-					<p>of bottled stout, golf on the TV,</p>
-					<p>Paddy Daly’s three ice-cubes in a Paddy;</p>
-					<p>your father sneaking pints of lemonade,</p>
-					<p>(before diabetes)</p>
-					<p>  the colour red.</p>
-					 <br>
-					<p>Go back further, your cousin’s underage den,</p>
-					<p>fairy lights, cider, Blue Jean Country Queens.</p>
-					<p>Before that? The granny flat,</p>
-					<p>the curved bridge of her back,</p>
-					<p>white hair, a surrender to black.</p>
-					 <br>
-					<p>To pig’s ears wilted over the pot</p>
-					<p>overhearing your father’s stories</p>
-					<p>of shoeless feet, neighbours eating swill,</p>
-					<p>fires out early, rosaries after dances;</p>
-					<p>his father making the church gates.</p>
-					 <br>
-					<p>Drink up</p>
-					<p>  (the lemonade is flat and stale).</p>
-					 <br>
-					<p>Sneak out</p>
-					<p>  (this place isn’t yours anymore).</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
 			</div>
-		<!-- Book Cover Tilter - Haruspex -->
-	<div class="col-sm-4 col-xs-12">
-			<a data-toggle="modal" data-target="#haruspex" class="tilter tilter--5">
-				<figure class="tilter__figure">
-					<img class="tilter__image" src="assets/img/2.jpg" alt="img09" />
-					<div class="tilter__deco tilter__deco--shine"><div></div></div>
-					<div class="tilter__deco tilter__deco--overlay"></div>
-					<figcaption class="tilter__caption">
+			<div class="modal fade" id="cornerHouse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">The Corner House</h4>
+							<h5>BY VICTORIA KENNEFICK</h5>
+							<img src="assets/img/cornerHouseModal.jpg">
+						</div>
+						<div class="modal-body">
+							<p>Lemonade bottles tinkle in crates,</p>
+							<p>tiny glass babies kept in drawers;</p>
+							<p>skulled once by your small gullet</p>
+							<p>after a day on your uncle’s farm –</p>
+							<p>a packet of fig-rolls for lunch.</p>
+							<br>
+							<p>Now, push the cap off the bar.</p>
+							<p>Should anyone open the door,</p>
+							<p>light would land with a shock</p>
+							<p>on bouncy floors, splitting ceilings,</p>
+							<p>flight of the stairs towards sky.</p>
+							<br>
+							<p>Go back, first to the special orders</p>
+							<p>of bottled stout, golf on the TV,</p>
+							<p>Paddy Daly’s three ice-cubes in a Paddy;</p>
+							<p>your father sneaking pints of lemonade,</p>
+							<p>(before diabetes)</p>
+							<p>  the colour red.</p>
+							<br>
+							<p>Go back further, your cousin’s underage den,</p>
+							<p>fairy lights, cider, Blue Jean Country Queens.</p>
+							<p>Before that? The granny flat,</p>
+							<p>the curved bridge of her back,</p>
+							<p>white hair, a surrender to black.</p>
+							<br>
+							<p>To pig’s ears wilted over the pot</p>
+							<p>overhearing your father’s stories</p>
+							<p>of shoeless feet, neighbours eating swill,</p>
+							<p>fires out early, rosaries after dances;</p>
+							<p>his father making the church gates.</p>
+							<br>
+							<p>Drink up</p>
+							<p>  (the lemonade is flat and stale).</p>
+							<br>
+							<p>Sneak out</p>
+							<p>  (this place isn’t yours anymore).</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Book Cover Tilter - Haruspex -->
+			<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+				<a data-toggle="modal" data-target="#haruspex" class="tilter tilter--5">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="assets/img/2.jpg" alt="img09" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
 						<h3 class="tilter__title">Haruspex</h3>
 						<p class="tilter__description">Victoria Kennefick</p>
-					</figcaption>
-					<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-						<path d="M20.5,20.5h260v375h-260V20.5z" />
-					</svg>
-				</figure>
-			</a>
-		</div>
-			<!-- Modal Haruspex poem -->
-		<div class="modal fade" id="haruspex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Haruspex</h4>
-		        <h5>BY VICTORIA KENNEFICK</h5>
-		        <img src="assets/img/river.jpg">
-		      </div>
-		      <div class="modal-body">
-		      <p>A bloated calf floated downriver</p>
-		      <p>you turned me away;</p>
-		      <p>I looked over your shoulder</p>
-		      <p>at the off-white belly, curly-haired</p>
-		      <p>in the city’s storm-swollen water.</p>
-		      <br>
-		      <p>I wanted to wade in, drag it</p>
-		      <p>dripping onto the pavement, slit</p>
-		      <p>the distended belly down the middle.</p>
-		      <p>Its guts would plop out, shock concrete.</p>
-		      <p>In the packed entrails maybe there’d be a clue.</p>
-		      <br>
-		      <p>The calf watched me back with cataract eyes.</p>
-		      <p>Impotent seers, we tried to divine</p>
-		      <p>the meaning of this, still holding hands.</p>
-		      <p>There was no liver to dissect, no blood.</p>
-		      <p>All the same, it did not augur well.</p>
-		      <br>
-		      <p>(Winner of the Red Line Book Festival Poetry Prize 2013)</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<!-- Book Cover Tilter - Whie Whale -->
-	<div class="col-sm-4 col-xs-12">
-		<a data-toggle="modal" data-target="#preacher" class="tilter tilter--1">
-						<figure class="tilter__figure">
-							<img class="tilter__image" src="assets/img/1.jpg" alt="img09" />
-							<div class="tilter__deco tilter__deco--shine"><div></div></div>
-							<figcaption class="tilter__caption">
-							<h3 class="tilter__title">The Preacher's Daughter</h3>
-							<p class="tilter__description">Victoria Kennefick</p>
 						</figcaption>
-							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-								<path d="M20.5,20.5h260v375h-260V20.5z" />
-							</svg>
-						</figure>
-					</a>
-				</div>
-				<div class="modal fade" id="preacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">The Preacher's Daughter</h4>
-			        <h5>BY VICTORIA KENNEFICK</h5>
-			        <img src="assets/img/1.jpg">
-			      </div>
-			      <div class="modal-body">
-			      <p>We drink too much pineapple rum, straight from the bottle,</p>
-					<p>bitch about the red-haired girl, the fetish model,</p>
-					<p>a preacher’s daughter with a thing for unreasonable shoes.</p>
-					<br>
-					<p>From her faded patchwork quilt, bleeding</p>
-					<p>hearts, we watched her mutate into a PVC Alice Liddell.</p>
-					<p>How did she manage in seven-inch patent heels?</p>
-					<br>
-					<p>She was tall as wheat — or the ceiling was low.</p>
-					<p>Cradling a mewing ginger-ball, she kissed the mirror</p>
-					<p>where their confederate-blue eyes</p>
-					<br>
-					<p>matched. Three scars began to scab on her arm,</p>
-					<p>deep big-cat scrawls she told us she cut herself</p>
-					<p>because it’s art and her clients like her</p>
-					<br>
-					<p>that way. We followed her clip-clop down</p>
-					<p>the rabbit hole; me, to hear tales of her running track</p>
-					<p>in those shoes; you, to see her white skin even paler</p>
-					<br>
-					<p>under lights. Back in your dorm room, I am static.</p>
-					<p>You pay to watch her pixelated Snow White online;</p>
-					<p>complain her constant chatter ruined it, or her, for you.</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
 			</div>
-		</div>
-	<hr>
-</section>
-		<div class="row quote">
-			<div class="col-xs-10 col-xs-offset-1">
-				<div class="bigQuote">
-				<h2>"In small gaps I think I see where sea turns into air."</h2>
+			<!-- Modal Haruspex poem -->
+			<div class="modal fade" id="haruspex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Haruspex</h4>
+							<h5>BY VICTORIA KENNEFICK</h5>
+							<img src="assets/img/river.jpg">
+						</div>
+						<div class="modal-body">
+							<p>A bloated calf floated downriver</p>
+							<p>you turned me away;</p>
+							<p>I looked over your shoulder</p>
+							<p>at the off-white belly, curly-haired</p>
+							<p>in the city’s storm-swollen water.</p>
+							<br>
+							<p>I wanted to wade in, drag it</p>
+							<p>dripping onto the pavement, slit</p>
+							<p>the distended belly down the middle.</p>
+							<p>Its guts would plop out, shock concrete.</p>
+							<p>In the packed entrails maybe there’d be a clue.</p>
+							<br>
+							<p>The calf watched me back with cataract eyes.</p>
+							<p>Impotent seers, we tried to divine</p>
+							<p>the meaning of this, still holding hands.</p>
+							<p>There was no liver to dissect, no blood.</p>
+							<p>All the same, it did not augur well.</p>
+							<br>
+							<p>(Winner of the Red Line Book Festival Poetry Prize 2013)</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Book Cover Tilter - Whie Whale -->
+			<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+				<a data-toggle="modal" data-target="#preacher" class="tilter tilter--1">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="assets/img/1.jpg" alt="img09" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<figcaption class="tilter__caption">
+						<h3 class="tilter__title">The Preacher's Daughter</h3>
+						<p class="tilter__description">Victoria Kennefick</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			</div>
+			<div class="modal fade" id="preacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">The Preacher's Daughter</h4>
+							<h5>BY VICTORIA KENNEFICK</h5>
+							<img src="assets/img/1.jpg">
+						</div>
+						<div class="modal-body">
+							<p>We drink too much pineapple rum, straight from the bottle,</p>
+							<p>bitch about the red-haired girl, the fetish model,</p>
+							<p>a preacher’s daughter with a thing for unreasonable shoes.</p>
+							<br>
+							<p>From her faded patchwork quilt, bleeding</p>
+							<p>hearts, we watched her mutate into a PVC Alice Liddell.</p>
+							<p>How did she manage in seven-inch patent heels?</p>
+							<br>
+							<p>She was tall as wheat — or the ceiling was low.</p>
+							<p>Cradling a mewing ginger-ball, she kissed the mirror</p>
+							<p>where their confederate-blue eyes</p>
+							<br>
+							<p>matched. Three scars began to scab on her arm,</p>
+							<p>deep big-cat scrawls she told us she cut herself</p>
+							<p>because it’s art and her clients like her</p>
+							<br>
+							<p>that way. We followed her clip-clop down</p>
+							<p>the rabbit hole; me, to hear tales of her running track</p>
+							<p>in those shoes; you, to see her white skin even paler</p>
+							<br>
+							<p>under lights. Back in your dorm room, I am static.</p>
+							<p>You pay to watch her pixelated Snow White online;</p>
+							<p>complain her constant chatter ruined it, or her, for you.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
+</div>
 <hr>
-<section class="container">
-		<div class="row">
-			<h1>Interviews</h1>
-			  	<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-			  		<div class="interview">
-				    	<a class="thumbnail">
-				      	<img src="assets/img/irishTimes.jpg" alt="Irish Times Interview"></a>
-				      	<div class="caption">
-	                      	<h4>Irish Times</h4>
-	                      	<p>Victoria Kennefick on White Whale: navigating the poetry of grief</p>
-	                      	<p>
-	                      	<a href="http://www.irishtimes.com/culture/books/victoria-kennefick-on-white-whale-navigating-the-poetry-of-grief-1.2251514" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a> 
-	                      	</p>
-				       </div>
-				    </div>
-			    </div>
-				<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-					<div class="interview">
-					  	<a class="thumbnail">
-					  	<img src="assets/img/poetryFoundation.png" alt="Poetry Foundation Interview" target="_blank"></a>
-					    <div class="caption">
-		            		<h4>Poetry Foundation</h4>
-		                    <p><b>September 2015: "Things No Longer There"</b></p>
-		                    <p>
-		                    <a href="https://www.poetryfoundation.org/poems-and-poets/poets/detail/victoria-kennefick" target="_blank" class="btn btn-info btn-xs" role="button">Read in full</a> 
-		                    </p>
-		                </div>
-				    </div>
-				</div>
-			  	<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-			  		<div class="interview">
-				    	<a class="thumbnail" target="_blank">
-				      	<img src="assets/img/headStuff.png" alt="Head Stuff Interview"></a>
-				      	<div class="caption">
-	                      	<h4>Head Stuff</h4>
-	                      	<p><b>Meet the Poet</b></p> <p>By Alvy Carragher on May 22nd, 2015</p>
-	                      	<p>
-	                      	<a href="http://www.headstuff.org/2015/05/meet-the-poet-6-victoria-kennefick/" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a> 
-	                      	</p>
-				       </div>
-			       </div>
-			    </div>
-				<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-					<div class="interview">
-				  	<a class="thumbnail">
-				  	<img src="assets/img/poetrySpotlight.png" alt="Poetry Spotlight Interview" target="_blank"></a>
-				    <div class="caption">
-	            		<h4>Poetry Spotlight</h4>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-	                    <p>
-	                    <a href="http://poetryspotlight.com/victoria-kennefick/" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a> 
-	                    </p>
-	                    </div>
-
-				    </div>
-				    
-				</div>
-			   
-	</section>
-	<hr>
-</main>
-
+</section>
 <div class="row quote">
-			<div class="col-xs-10 col-xs-offset-1">
-				<div class="bigQuote">
-				<h2>"Winner of the Fool for Poetry Chapbook prize (2014)"</h2>
+<div class="col-xs-10 col-xs-offset-1">
+	<div class="bigQuote">
+		<h2>"In small gaps I think I see where sea turns into air."</h2>
+	</div>
+</div>
+</div>
+<hr>
+<a name="interviews"></a>
+<section class="interviews">
+<div class="container ">
+	<div class="row ">
+		<h1>Interviews</h1>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+			<div class="interview">
+				<a class="thumbnail">
+				<img src="assets/img/irishTimes.jpg" alt="Irish Times Interview"></a>
+				<div class="caption">
+					<h4>Irish Times</h4>
+					<p>Victoria Kennefick on White Whale: navigating the poetry of grief</p>
+					<p>
+						<a href="http://www.irishtimes.com/culture/books/victoria-kennefick-on-white-whale-navigating-the-poetry-of-grief-1.2251514" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a>
+					</p>
 				</div>
-				
 			</div>
-
 		</div>
-		<hr>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+			<div class="interview">
+				<a class="thumbnail">
+				<img src="assets/img/poetryFoundation.png" alt="Poetry Foundation Interview" target="_blank"></a>
+				<div class="caption">
+					<h4>Poetry Foundation</h4>
+					<p><b>September 2015: "Things No Longer There"</b></p>
+					<p>
+						<a href="https://www.poetryfoundation.org/poems-and-poets/poets/detail/victoria-kennefick" target="_blank" class="btn btn-info btn-xs" role="button">Read in full</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+			<div class="interview">
+				<a class="thumbnail" target="_blank">
+				<img src="assets/img/headStuff.png" alt="Head Stuff Interview"></a>
+				<div class="caption">
+					<h4>Head Stuff</h4>
+					<p><b>Meet the Poet</b></p> <p>By Alvy Carragher on May 22nd, 2015</p>
+					<p>
+						<a href="http://www.headstuff.org/2015/05/meet-the-poet-6-victoria-kennefick/" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+			<div class="interview">
+				<a class="thumbnail">
+				<img src="assets/img/poetrySpotlight.png" alt="Poetry Spotlight Interview" target="_blank"></a>
+				<div class="caption">
+					<h4>Poetry Spotlight</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p>
+						<a href="http://poetryspotlight.com/victoria-kennefick/" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr>
+</main>
+<div class="row quote">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="bigQuote">
+			<h2>"Winner of the Fool for Poetry Chapbook prize (2014)"</h2>
+		</div>
+		
+	</div>
+</div>
+<hr>
+<a name="multimedia"></a>
 <section>
 	<div class="container">
 		<div class="row">
 			<h1>Multimedia</h1>
-				<div class="col-xs-12 col-sm-6">
-					<div class="audio">
-						<h2>Audio / Podcast</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, corrupti, fugit. Temporibus nostrum nam deleniti vitae accusantium iste sunt facilis, quisquam eveniet reiciendis corporis, veniam nulla. Provident, tempora perspiciatis quod!</p>
-						<audio controls="controls">
-							<source src="assets/audio/podcast.mp3" type="audio/mp3"/>
-						</audio>
-					</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="audio">
+					<h2>Audio / Podcast</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, corrupti, fugit. Temporibus nostrum nam deleniti vitae accusantium iste sunt facilis, quisquam eveniet reiciendis corporis, veniam nulla. Provident, tempora perspiciatis quod!</p>
+					<audio controls="controls">
+						<source src="assets/audio/podcast.mp3" type="audio/mp3"/>
+					</audio>
 				</div>
-				<div class="col-xs-12 col-sm-6">
-					<div class="video">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="video">
 					<h2>Video</h2>
 					<p>Best poetry Pamphlet Acceptance Speech - Saboyuer Awards 2015</p>
 					<video controls="controls">
 						<source src="https://www.youtube.com/embed/CkkgwBsGkTI" type="video/mp4">
 					</video>
-					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 	<hr>
 </section>
+<a name="contact"></a>
 <section>
 	<div class="container">
 		<div class="row">
-			<h1>Contact me</h1>	
+			<h1>Contact me</h1>
 			<div class="col-xs-12 col-sm-6">
 				<div class="contactFormWrapper">
 					<form class="form" id="form1">
-					<p class="name">
-						<input type="text" name="name" class="validate[required,custom, length[0,100], custom[onlyLetter]]feedback-input" placeholder="Name" id="name">
-					</p>
-					<p class="email">
-				        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-				     </p>
-				     <p class="text">
-				        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-				      </p>
-				      <div class="submit">
-				        <input type="submit" value="SEND" id="button-blue"/>
-				        <div class="ease"></div>
-				       </div>
+						<p class="name">
+							<input type="text" name="name" class="validate[required,custom, length[0,100], custom[onlyLetter]]feedback-input" placeholder="Name" id="name">
+						</p>
+						<p class="email">
+							<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+						</p>
+						<p class="text">
+							<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+						</p>
+						<div class="submit">
+							<input type="submit" value="SEND" id="button-blue"/>
+							<div class="ease"></div>
+						</div>
 					</form>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<div class="contactImg">
-				<img src="assets/img/vkBlack.jpg">
+					<img src="assets/img/vkBlack.jpg">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <footer>
-<hr>
+	<hr>
 	<div class="row">
-			<div class="col-xs-10 col-xs-offset-1">
-				<h5>Footer</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis provident repudiandae ea ducimus vitae quaerat illum nobis, architecto quia, quos atque ad dignissimos nesciunt sed adipisci dolore fugit nihil!</p>
-				</div>
-			</div>	
+		<div class="col-xs-10 col-xs-offset-1">
+			<h5>Footer</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis provident repudiandae ea ducimus vitae quaerat illum nobis, architecto quia, quos atque ad dignissimos nesciunt sed adipisci dolore fugit nihil!</p>
+		</div>
+	</div>
 </footer>
 </div>
-	<script type="text/javascript" src="lib/jquery/jquery-3.2.1.js"></script>
-	<script src='lib/bootstrap/js/bootstrap.min.js'></script>
-	<script src="js/anime.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/main.js"></script>	
-	<script type="text/javascript" src="js/myScript.js"></script>
-
-	</body>
+<script type="text/javascript" src="lib/jquery/jquery-3.2.1.js"></script>
+<script src='lib/bootstrap/js/bootstrap.min.js'></script>
+<script src="js/anime.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/myScript.js"></script>
+</body>
 </html>
