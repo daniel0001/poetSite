@@ -24,16 +24,22 @@
 .noBottomMargin{
 	margin: 0px !important;
 }
+
 /*navbar*/
 .navbar{
-	float: right;
     border-radius: 0;
     background-color: rgba(0,0,0,0.3) !important;
-	padding-left: 5%;
-	padding-right: 5%;
-    align-items: baseline;
-    color: white;
-	margin-bottom: 50px; 
+    border: none !important;
+}
+
+.navLink{
+	color: white !important;
+	font-size: 1.2em ;
+}
+.navLink:hover{
+	color: rgba(0, 255, 255, 1) !important;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	box-shadow: 1px 1px 1px #888888;
 }
 .navbar-brand {
 	color: rgba(0, 255, 255, 1) !important;
@@ -41,22 +47,8 @@
 	font-family: 'Dancing Script', cursive;
 	font-size: 2.5em !important;
 }
-.navbar a{
-	letter-spacing: 0.1em;
-	color: white !important;
-	font-size: 1.2em ;
-}
-
-.navbar a:hover{
-	background-color: rgba(0,0,0,0.5) !important;
-}
-.navbar button{
-    margin-right: 20px;
-}
 
 /*jumbotron*/
-
-
 .jumbotron{
 	background:url("../assets/img/sea.jpg") fixed no-repeat;
 	background-size: cover;
@@ -75,8 +67,7 @@
 	height: 500px;
 }
 .coverPortrait{
-	text-align: left;
-	margin-top: 100px;
+	padding-top: 30px;
 }
 .coverPortrait img{
 	width: 100%;
@@ -144,15 +135,16 @@
 	background-color: rgba(75,75,75, 1);
 }
 .about img{
-	max-height:300px; 
-	max-width: 400px;
+	
 }
 .aboutImgWrapper{
-	text-align: center;
+	text-align: left;
+	width: auto;
 }
 .aboutText{
 	padding-top: 20px;
 	color: white;
+	max-width: 500px;
 }
 /*Interviews section*/
 .interviews{
@@ -166,7 +158,7 @@
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	font-size: 0.9em;
-	min-height: 300px;
+	height: auto;
 	background-color: white;
 }
 .interview:hover{
@@ -174,6 +166,10 @@
 	background-color: #f5f5dc;
 }
 /*Multimedia section*/
+.multimedia{
+	background-color: rgba(75,75,75, 1);
+	color: white;
+}
 .audio, .video{
 	text-align: center;
 }
@@ -181,7 +177,6 @@
 /*Tilter Book covers*/
 
 .tilter {
-
 	position: relative;
 	display: block;
 	flex: none;
@@ -278,18 +273,27 @@
 }
 
 /*Contact section*/
+.contact{
+	background-color: rgba(75,75,75, 1);
+	color: white;
+	padding: 20px;
+}
 .contactImg img{
 	display: flex;
 	border-radius: 50%;
 	margin: 0 auto;
 	height: 200px;
+	
 }
 .contactFormWrapper{
 	margin: 0 auto;
 	padding: 10px;
 	background-color: #ddd;
-	width: 300px;
+	width: auto;
 	text-align: center;
+}
+.contact input, .contact #comment{
+	width: 300px;
 }
 
 

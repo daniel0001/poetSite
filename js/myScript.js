@@ -1,8 +1,20 @@
 $(document).ready(function() {
-	$( ".fade-one" ).hide(0).fadeIn(1500);
-	$( "#fade-two" ).hide(0).delay(500).fadeIn(1000);
-	$( "#fade-three" ).hide(0).delay(1000).fadeIn(1000);
-	$( "#fade-four" ).hide(0).delay(1500).fadeIn(1000);
+	$( ".fade-one" ).hide(0).fadeIn(2000);
+	$( "#fade-two" ).hide(0).delay(1000).fadeIn(2000);
+	$( "#fade-three" ).hide(0).delay(1500).fadeIn(3000);
+	$( "#fade-four" ).hide(0).delay(2000).fadeIn(2000);
+
+	$('a[href^="#"]').on('click', function(event) {
+      event.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').animate({
+        'scrollTop': $target.offset().top
+      }, 1000, 'swing')
+        window.location.hash = target;
+      });
 
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
@@ -13,16 +25,16 @@ $(window).scroll(function() {
     }
 });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $(document).on('click', 'a.page-scroll', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+// //jQuery for page scrolling feature - requires jQuery Easing plugin
+// $(function() {
+//     $(document).on('click', 'a.page-scroll', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top
+//         }, 1500, 'easeInOutExpo');
+//         event.preventDefault();
+//     });
+// });
 
 
 // nav-bar change colour on scroll

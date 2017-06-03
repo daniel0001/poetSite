@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Victoria Kennefick Poetry</title>
 		<script>
 		document.documentElement.className = 'js';
@@ -29,14 +30,25 @@
 			</div>
 			<ul id="myCollapsingList" class="nav nav-justified collapse navbar-collapse">
 				<li class="active btn--trigger"><a href="#" >Home</a></li>
-				<li ><a class="page-scroll" id="#about">About</a></li>
-				<li ><a href="#poetry" ng-click="True">Poetry</a></li>
-				<li ><a href="#multimedia">Multimedia</a></li>
-				<li ><a href="#interviews">Interviews</a></li>
-				<li ><a href="#contact">Contact</a></li>
-			</ul>
+				<li ><a href="#about" class="navLink" >About</a></li>
+				<li ><a href="#poetry" class="navLink">Poetry</a></li>
+				<li ><a href="#interviews" class="navLink">Interviews</a></li>
+				<li ><a href="#multimedia" class="navLink">Multimedia</a></li>
+				<li ><a href="#contact" class="navLink">Contact</a></li>
+				<li class="nav-item ">
+						<a class="nav-link" href="https://twitter.com/account" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'Twitter Social Clicks');">
+						<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-twitter  fa-stack-1x fa-inverse"></i>
+						</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="https://www.facebook.com/account?ref=hl" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'Facebook Social Clicks');">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+					</a>
+				</li>
+    		</ul>
 		</nav>
-		
 		<!-- <div class="coverImg">	 -->
 		<div class="jumbotron noBottomMargin segmenter">
 			<div class="container">
@@ -100,7 +112,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="row quote">
+			<div class="row quote" id="poetry">
 				<a name="poetry"></a>
 				<div class="col-xs-10 col-xs-offset-1">
 					<div class="bigQuote">
@@ -489,7 +501,7 @@
 </section>
 <div class="row quote">
 <div class="col-xs-10 col-xs-offset-1">
-	<div class="bigQuote">
+	<div class="bigQuote" id="interviews">
 		<h2>"In small gaps I think I see where sea turns into air."</h2>
 	</div>
 </div>
@@ -532,7 +544,7 @@
 				<img src="assets/img/headStuff.png" alt="Head Stuff Interview"></a>
 				<div class="caption">
 					<h4>Head Stuff</h4>
-					<p><b>Meet the Poet</b></p> <p>By Alvy Carragher on May 22nd, 2015</p>
+					<p><b>Meet the Poet</b> By Alvy Carragher on May 22nd, 2015</p>
 					<p>
 						<a href="http://www.headstuff.org/2015/05/meet-the-poet-6-victoria-kennefick/" class="btn btn-info btn-xs" target="_blank" role="button">Read in full</a>
 					</p>
@@ -556,7 +568,7 @@
 </section>
 <hr>
 </main>
-<div class="row quote">
+<div class="row quote" id="multimedia">
 	<div class="col-xs-10 col-xs-offset-1">
 		<div class="bigQuote">
 			<h2>"Winner of the Fool for Poetry Chapbook prize (2014)"</h2>
@@ -565,8 +577,7 @@
 	</div>
 </div>
 <hr>
-<a name="multimedia"></a>
-<section>
+<section class="multimedia">
 	<div class="container">
 		<div class="row">
 			<h1>Multimedia</h1>
@@ -592,8 +603,16 @@
 	</div>
 	<hr>
 </section>
-<a name="contact"></a>
-<section>
+<div class="row quote" id="contact">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="bigQuote">
+			<h2>"Winner of the Fool for Poetry Chapbook prize (2014)"</h2>
+		</div>
+		
+	</div>
+</div>
+<hr>
+<section class="contact">
 	<div class="container">
 		<div class="row">
 			<h1>Contact me</h1>
