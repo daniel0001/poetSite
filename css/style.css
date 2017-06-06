@@ -4,29 +4,22 @@
     width: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-
 }
-
 .row>h1{
 	text-align: center;
 }
 .form input{
-	margin: 0;
-	width: 200px;
-	height: 30px;
-	color: black;
+	width: 300px;
 }
 .form button{
-	margin: 0;
 	height: 30px;
 }
-
 .noBottomMargin{
 	margin: 0px !important;
 }
-
 /*navbar*/
 .navbar{
+	width: 100%;
     border-radius: 0;
     background-color: rgba(0,0,0,0.3) !important;
     border: none !important;
@@ -34,7 +27,7 @@
 
 .navLink{
 	color: white !important;
-	font-size: 1.2em ;
+	font-size: 1.5em ;
 }
 .navLink:hover{
 	color: rgba(0, 255, 255, 1) !important;
@@ -47,6 +40,7 @@
 	font-family: 'Dancing Script', cursive;
 	font-size: 2.5em !important;
 }
+
 
 /*jumbotron*/
 .jumbotron{
@@ -61,9 +55,8 @@
 	text-align: right;
     color: white;
     background-color: rgba(0,0,0,0);
-    padding: 50px;
     padding-top: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 	height: 500px;
 }
 .coverPortrait{
@@ -71,7 +64,7 @@
 }
 .coverPortrait img{
 	width: 100%;
-	border: 2px white solid;
+	border: 1px white solid;
 }
 .jumboBox h1{
 	font-family: 'Abril Fatface', serif;
@@ -134,17 +127,13 @@
 .about{
 	background-color: rgba(75,75,75, 1);
 }
-.about img{
-	
-}
 .aboutImgWrapper{
 	text-align: left;
-	width: auto;
+	width: 100%;
 }
 .aboutText{
-	padding-top: 20px;
+	padding: 20px;
 	color: white;
-	max-width: 500px;
 }
 /*Interviews section*/
 .interviews{
@@ -162,7 +151,6 @@
 	background-color: white;
 }
 .interview:hover{
-	
 	background-color: #f5f5dc;
 }
 /*Multimedia section*/
@@ -265,12 +253,7 @@
 	line-height: 1;
 	margin: 0;
 }
-
-.tilter__description {
-	font-size: 0.85em;
-	margin: 1em 0 0 0;
-	letter-spacing: 0.15em;
-}
+/*Multimedia section*/
 
 /*Contact section*/
 .contact{
@@ -294,131 +277,4 @@
 }
 .contact input, .contact #comment{
 	width: 300px;
-}
-
-
-/*Make the cover image explode*/
-.segmenter {
-	width: 100vw;
-	height: 100vh;
-	position: relative;
-	overflow: hidden;
-}
-
-.segmenter__background,
-.segmenter__pieces,
-.segmenter__piece-wrap,
-.segmenter__piece-parallax,
-.segmenter__piece {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	transform-style: preserve-3d;
-}
-
-.segmenter__piece-parallax {
-	transition: transform 0.2s ease-out;
-}
-
-.segmenter__pieces {
-	perspective: 400px;
-}
-
-.segmenter__background,
-.segmenter__piece,
-.segmenter {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
-.segmenter__shadow {
-	position: absolute;
-	opacity: 0;
-	box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
-}
-.segmenter>h2{
-	font-size: 30;
-}
-
-
-
-
-
-/*poem scroll demo*/
-#poemScroll{
-	/*border: 2px solid black;*/
-	display: flex;
-	align-items: baseline;
-	height: 80px;
-}
-.outer{
-	color: rgba(0,0,0,0.2);
-	font-size: 2em;
-	width: 100%;
-	height: 100%;
-}
-.rightText{
-	text-align: right;
-}
-.leftText{
-	text-align: left;
-}
-.light{
-	color: rgba(0,0,0,0.5);
-}
-.inFocusText{
-	text-align: center;
-	font-weight: bold;
-	font-size: 2.5em;
-	height: 100%;
-	height: 100%;
-}
-
-.scroll-left {
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: yellow;
- color: orange;
- border: 1px solid orange;
-}
-.scroll-left p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: scroll-left 15s linear infinite;
- -webkit-animation: scroll-left 15s linear infinite;
- animation: scroll-left 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes scroll-left {
- 0%   { 
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%); 
- }
 }
