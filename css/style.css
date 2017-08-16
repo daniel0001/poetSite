@@ -10,6 +10,7 @@
 }
 .form input{
 	width: 300px;
+	color:black;
 }
 .form button{
 	height: 30px;
@@ -277,4 +278,5 @@
 }
 .contact input, .contact #comment{
 	width: 300px;
+	color: black;
 }

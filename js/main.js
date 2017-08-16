@@ -77,15 +77,7 @@
 					elasticity : 600
 				}
 			},
-			/*
-			overlay : {
-				translation : {x: 10, y: 10, z: [0,50]},
-				reverseAnimation : {
-					duration : 500,
-					easing : 'easeOutExpo'
-				}
-			},
-			*/
+	
 			shine : {
 				translation : {x: 50, y: 50, z: 0},
 				reverseAnimation : {
@@ -204,85 +196,4 @@
 	window.TiltFx = TiltFx;
 
 
-	// // Helper vars and functions.
-	// function extend( a, b ) {
-	// 	for( var key in b ) { 
-	// 		if( b.hasOwnProperty( key ) ) {
-	// 			a[key] = b[key];
-	// 		}
-	// 	}
-	// 	return a;
-	// }
-	// // From https://davidwalsh.name/javascript-debounce-function.
-	// function debounce(func, wait, immediate) {
-	// 	var timeout;
-	// 	return function() {
-	// 		var context = this, args = arguments;
-	// 		var later = function() {
-	// 			timeout = null;
-	// 			if (!immediate) func.apply(context, args);
-	// 		};
-	// 		var callNow = immediate && !timeout;
-	// 		clearTimeout(timeout);
-	// 		timeout = setTimeout(later, wait);
-	// 		if (callNow) func.apply(context, args);
-	// 	};
-	// };
-	// // Creates a sorted array of random numbers between minVal and maxVal with a length = size.
-	// function createRandIntOrderedArray(minVal, maxVal, size) {
-	// 	var arr = [];
-	// 	for(var i=0; i<size; ++i) {
-	// 		arr.push(anime.random(minVal, maxVal));
-	// 	}
-	// 	arr.sort(function(a, b){ return a-b });
-	// 	return arr;
-	// }
-	// // Checks if an object is empty.
-	// function isObjEmpty(obj) {
-	// 	return Object.getOwnPropertyNames(obj).length > 0;
-	// }
-	// // Concatenate JS objs.
-	// // From http://stackoverflow.com/a/2454315.
-	// function collect() {
-	// 	var ret = {};
-	// 	var len = arguments.length;
-	// 	for (var i=0; i<len; i++) {
-	// 		for (var p in arguments[i]) {
-	// 			if (arguments[i].hasOwnProperty(p)) {
-	// 				ret[p] = arguments[i][p];
-	// 			}
-	// 		}
-	// 	}
-	// 	return ret;
-	// }
-	// // // Check if clip-path is supported. From http://stackoverflow.com/a/30041538.
-	// // function areClipPathShapesSupported() {
-	// // 	var base = 'clipPath',
-	// // 		prefixes = [ 'webkit', 'moz', 'ms', 'o' ],
-	// // 		properties = [ base ],
-	// // 		testElement = document.createElement( 'testelement' ),
-	// // 		attribute = 'polygon(50% 0%, 0% 100%, 100% 100%)';
-
-	// // 	// Push the prefixed properties into the array of properties.
-	// // 	for ( var i = 0, l = prefixes.length; i < l; i++ ) {
-	// // 		var prefixedProperty = prefixes[i] + base.charAt( 0 ).toUpperCase() + base.slice( 1 ); // remember to capitalize!
-	// // 		properties.push( prefixedProperty );
-	// // 	}
-
-	// // 	// Interate over the properties and see if they pass two tests.
-	// // 	for ( var i = 0, l = properties.length; i < l; i++ ) {
-	// // 		var property = properties[i];
-
-	// // 		// First, they need to even support clip-path (IE <= 11 does not)...
-	// // 		if ( testElement.style[property] === '' ) {
-
-	// // 			// Second, we need to see what happens when we try to create a CSS shape...
-	// // 			testElement.style[property] = attribute;
-	// // 			if ( testElement.style[property] !== '' ) {
-	// // 				return true;
-	// // 			}
-	// // 		}
-	// // 	}
-	// // 	return false;
-	// // };
 })(window);
