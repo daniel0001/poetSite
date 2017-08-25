@@ -17,7 +17,7 @@ There is a large 'hero' image at the top of the page with a picture of the Poet,
 
 Below the Hero image there are three large links 'watch', 'listen', 'read'. These links draw the user into the key areas of the site.
 
-Sections are divided by large quotes in <h2> to give the user a feel for the poets content / poetry.
+Sections are divided by large quotes in h2 to give the user a feel for the poets content / poetry.
 
 The 'About' section contains a colour image of the poet and text detailing the background of the poet. 
 
