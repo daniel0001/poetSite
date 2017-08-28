@@ -1,9 +1,9 @@
 .body{
 	padding-top: 150px;
-	text-decoration: none;
-    width: 100%;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+}
+a{
+	text-decoration: none;
 }
 .row>h1{
 	text-align: center;
@@ -20,15 +20,11 @@
 }
 /*navbar*/
 .navbar{
-	width: 100%;
-    border-radius: 0;
     background-color: rgba(0,0,0,0.3) !important;
-    border: none !important;
 }
-
 .navLink{
 	color: white !important;
-	font-size: 1.5em ;
+	font-size: 1.2em ;
 }
 .navLink:hover{
 	color: rgba(0, 255, 255, 1) !important;
@@ -48,7 +44,6 @@
 	background:url("../assets/img/sea.jpg") fixed no-repeat;
 	background-size: cover;
 	background-position: center;
-	width: 100%;
 }
 
 .jumboBox{
@@ -95,6 +90,7 @@
 .quote{
 	text-align: center;
 	font-family: 'Abril Fatface';
+	width: 100%;
 }
 
 /*Books section*/
@@ -128,12 +124,10 @@
 .about{
 	background-color: rgba(75,75,75, 1);
 }
-.aboutImgWrapper{
-	text-align: left;
+.aboutImgWrapper> img{
 	width: 100%;
 }
 .aboutText{
-	padding: 20px;
 	color: white;
 }
 /*Interviews section*/
@@ -279,4 +273,30 @@
 .contact input, .contact #comment{
 	width: 300px;
 	color: black;
+}
+@media only screen and (max-width: 414px){
+	.jumboBox{
+		padding-top: 50px;
+	}
+	.navbar-brand {
+		color: rgba(0, 255, 255, 1) !important;
+		letter-spacing: 0.1em;
+		font-family: 'Dancing Script', cursive;
+		font-size: 1.2em !important;
+	}
+	.form input{
+	width: 150px;
+	}
+	.spacerOne{
+		font-size: 1.8em;
+	}
+	.aboutImgWrapper > img{
+		width: 300px;
+	}
+	.aboutText{
+		padding: 0px;
+	}
+	.contact input, .contact #comment {
+		width: 200px;
+	}
 }
